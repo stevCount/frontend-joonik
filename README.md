@@ -12,6 +12,22 @@ Este proyecto es un frontend construido con **React**, **TypeScript** y **Materi
 - Docker (para contenerización)
 - Vite (para desarrollo rápido)
 
+### Dependencia de contenedores
+
+Asegúrate de que el backend esté funcionando correctamente, ya que el frontend depende de su endpoint para cargar la información. El backend debe estar disponible en:
+
+```
+http://localhost:8080/api/locations
+```
+
+o visitar el repo: 
+
+```
+https://github.com/stevCount/backend-joonik.git
+```
+
+> Si el backend no está activo o la API Key no es válida, no se mostrará ninguna sede.
+
 ## Requisitos Previos
 
 Para poder ejecutar este frontend de forma local, es necesario tener instalado lo siguiente en el entorno:
@@ -41,6 +57,24 @@ docker-compose up --build
 
 Esto instalará dependencias y levantará el servidor de desarrollo automáticamente.
 
+## Visualización del Frontend
+
+Una vez el proyecto esté levantado, puedes acceder a la aplicación en tu navegador a través de:
+
+```
+http://localhost:5173/
+```
+
+### ¿Qué muestra la aplicación?
+
+Una interfaz profesional construida con **React + TypeScript** y estilizada con **Material UI**, donde se presenta una lista de sedes consumidas desde el backend protegido con API Key. Cada sede incluye:
+
+- Nombre
+- Código
+- Imagen
+- Fecha de creación
+
+
 ## Ejecutar pruebas unitarias
 
 Este proyecto incluye pruebas unitarias usando **Jest** y **React Testing Library**.
@@ -48,7 +82,7 @@ Este proyecto incluye pruebas unitarias usando **Jest** y **React Testing Librar
 Para correr las pruebas localmente:
 
 ```bash
-npm test
+docker exec -t frontend-joonik-frontend-1 npm test
 ```
 
 ## Licencia y Derechos de Autor
