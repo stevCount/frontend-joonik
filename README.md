@@ -40,14 +40,19 @@ Para poder ejecutar este frontend de forma local, es necesario tener instalado l
 
 ## Instrucciones de instalación y ejecución
 
-1. Clonar este repositorio:
+1. Clonar este repositorio (si es necesario):
 
 ```bash
 git clone https://github.com/stevCount/frontend-joonik.git
+```
+
+Ingresar a la carpeta del repositorio:
+
+```bash
 cd frontend-joonik
 ```
 
-2. Copiar el archivo `.env` en la raíz del proyecto, el archivo se comparte de forma personal :
+2. Copiar el archivo `.env` (si se requiere) en la raíz del proyecto, el archivo se comparte de forma personal :
 
 3. Ejecutar el contenedor Docker:
 
@@ -55,7 +60,7 @@ cd frontend-joonik
 docker-compose up --build
 ```
 
-Esto instalará dependencias y levantará el servidor de desarrollo automáticamente.
+Esto instalará dependencias y levantará el servidor de desarrollo automáticamente, puede tomar unos minutos.
 
 ## Visualización del Frontend
 
