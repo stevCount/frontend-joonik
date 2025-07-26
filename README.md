@@ -31,11 +31,7 @@ git clone https://github.com/stevCount/frontend-joonik.git
 cd frontend-joonik
 ```
 
-2. Copiar el archivo `.env` en la raíz del proyecto, el archivo se comparte de forma personal:
-
-```bash
-cp .env.example .env
-```
+2. Copiar el archivo `.env` en la raíz del proyecto, el archivo se comparte de forma personal :
 
 3. Ejecutar el contenedor Docker:
 
